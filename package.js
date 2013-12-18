@@ -3,7 +3,7 @@ Package.describe({
 });
 
 Npm.depends({
-  braintree: "1.8.0",
+  braintree: "1.9.2",
 });
 
 Package.on_use(function(api) {
