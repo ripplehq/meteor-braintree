@@ -3,10 +3,14 @@ Package.describe({
 });
 
 Npm.depends({
-  braintree: "1.9.2",
+  braintree: "1.12.0",
 });
 
 Package.on_use(function(api) {
   api.add_files('server.js', 'server');
   api.add_files('braintree-client.js', 'client');
+ 
+  if (typeof api.export !== 'undefined') { 
+    api.export('Braintree');
+  }
 });
